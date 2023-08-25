@@ -8,7 +8,7 @@ const Resumen: FunctionComponent<{}> = () => {
     const { name, lastName, DNI, cellphone, plan, price_plan} = useSelector((state: any) => state.resumen)
 
     return (
-        <div className='max-w-4xl mx-auto mt-10 mb-20 text-gray-rimac px-8'>
+        <div className='max-w-4xl mx-auto min-h-screen mt-10 text-gray-rimac px-8'>
             <h2 className='text-3xl font-semibold mb-10'>Resumen del seguro</h2>
             <div className='rounded-3xl card-shadow border border-gray-50 py-6 px-8 hover:cursor-pointer transition duration-300'>
                 <p className='font-semibold uppercase text-xs mb-3'>Precios calculados para:</p>

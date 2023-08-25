@@ -5,6 +5,7 @@ import { Plan as IPlan } from '../../models';
 import { useDispatch, useSelector } from 'react-redux';
 import { setResumen } from '../../store/resumen';
 import { useNavigate } from 'react-router-dom';
+import { setStep } from '../../store/stepper';
 
 const Plan: FunctionComponent<{ plan: IPlan }> = ({ plan }) => {
     const { addUserLightIcon } = Icons;
@@ -14,6 +15,7 @@ const Plan: FunctionComponent<{ plan: IPlan }> = ({ plan }) => {
 
     const handleClick: () => void = () => {
         dispatch(setResumen({ name, lastName, DNI, cellphone, plan: plan.name, price_plan: plan.price }) as unknown as any);
+        dispatch(setStep({ step: 2, active: true, path: '/resumen' }) as unknown as any);
         navigate('/resumen');
     }
 

@@ -18,7 +18,7 @@ const Plans: FunctionComponent<{}> = () => {
 	}
 
 	return (
-		<div className='max-w-4xl mx-auto my-10 text-gray-rimac px-8'>
+		<div className='max-w-4xl min-h-screen mx-auto mt-10 mb-14 text-gray-rimac px-8'>
 			<h2 className='text-4xl max-w-lg mx-auto text-center font-semibold mb-4'>{ name }, ¿Para quién deseas cotizar?</h2>
 			<h3 className='text-base text-center max-w-lg mx-auto mb-7'>Selecciona la opción que se ajuste más a tus necesidades.</h3>
 			<div className='max-w-xl grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 mx-auto'>

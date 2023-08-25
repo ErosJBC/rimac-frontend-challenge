@@ -35,7 +35,7 @@ const Insurence: FunctionComponent<{}> = () => {
     });
 
     return (
-        <div className='max-w-screen-lg mx-auto mt-12 mb-44 px-8 lg:px-0 text-gray-rimac'>
+        <div className='max-w-screen-lg mx-auto min-h-screen mt-28 px-8 lg:px-0 text-gray-rimac'>
             <div className='flex flex-col gap-x-14 md:flex-row mx-auto'>
                 <div className='hidden md:block w-[45%]'>
                     <img src={sloganImage} alt="slogan.png" className='h-auto max-w-full object-cover' />
