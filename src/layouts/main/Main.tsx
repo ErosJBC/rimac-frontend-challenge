@@ -1,6 +1,6 @@
-import { FunctionComponent } from 'react'
-import { Footer, Navbar } from '../../components'
-import { Outlet } from 'react-router-dom'
+import { FunctionComponent } from 'react';
+import { Footer, Navbar } from '../../components';
+import { Outlet } from 'react-router-dom';
 
 const Main: FunctionComponent<{}> = () => {
 	return (

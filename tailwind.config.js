@@ -16,6 +16,7 @@ export default {
         'neutral-rimac-soft': "#EDEFFC",
         'blue-berry-rimac': "#4F4FFF",
         'rose-rimac': "#FF1C44",
+        'rose-rimac-dark': "#C333FF",
         'aqua-rimac': "#00F4E2",
         'lemon-rimac': "#00FF7F",
       }
