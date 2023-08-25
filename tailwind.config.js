@@ -4,8 +4,19 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'gray-rimac': "#03050F",
+        'gray-rimac-10': "#F8F9FF",
+        'gray-rimac-60': "#5E6488",
+        'neutral-rimac': "#7981B2",
+        'rose-rimac': "#FF1C44",
+        'aqua-rimac': "#00F4E2",
+        'lemon-rimac': "#00FF7F",
+      }
+    },
   },
   plugins: [],
 }

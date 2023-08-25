@@ -3,7 +3,6 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "composite": true,
-    "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true
