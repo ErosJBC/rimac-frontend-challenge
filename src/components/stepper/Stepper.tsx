@@ -11,7 +11,7 @@ const Stepper: FunctionComponent<{}> = () => {
     const navigate = useNavigate();
 
     const handleClickReturn: () => void = () => {
-        dispatch(setStep({ step: step === 1 ? 1 : step - 1, active: true, path: '' }) as unknown as any);
+        dispatch(setStep({ step: step === 1 ? 1 : step - 1, active: true, path: step === 2 ? '/planes' : '' }) as unknown as any);
         navigate(step === 2 ? '/planes' : '');
     }
     return (

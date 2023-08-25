@@ -14,5 +14,12 @@ export const setUser = (path: string, values: any) => {
             DNI: values.identity,
             cellphone: values.cellphone
         }));
+        localStorage.setItem('user', JSON.stringify({
+            name: response.data.name,
+            lastName: response.data.lastName,
+            birthDay: response.data.birthDay,
+            DNI: values.identity,
+            cellphone: values.cellphone
+        }));
     };
 };

@@ -6,6 +6,7 @@ import sloganImage from '../../assets/img/slogan.png';
 import { useDispatch } from 'react-redux';
 import { setUser } from '../../store/user';
 import { useNavigate } from 'react-router-dom';
+import { setStep } from '../../store/stepper';
 
 const Insurence: FunctionComponent<{}> = () => {
     const dispatch = useDispatch();
@@ -27,6 +28,7 @@ const Insurence: FunctionComponent<{}> = () => {
         onSubmit: async values => {
             try {
                 await dispatch(setUser(PATH_USER, values) as unknown as any);
+                dispatch(setStep({ step: 1, active: true, path: '/planes' }) as unknown as any);
                 navigate('/planes');
             } catch (error) {
                 console.log(error);
