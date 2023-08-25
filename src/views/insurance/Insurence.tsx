@@ -56,8 +56,8 @@ const Insurence: FunctionComponent<{}> = () => {
                     <p className='text-sm font-semibold mt-1.5'>Tú eliges cuánto pagar. Ingresa tus datos, cotiza y recibe nuestra asesoría. 100% online.</p>
                     <form className='mt-6' onSubmit={formik.handleSubmit}>
                         <div className="relative">
-                            <input type="text" id="identity" className="block px-2.5 pb-3 pt-4 w-full text-sm bg-transparent rounded-lg border border-gray-rimac-60 appearance-none text-gray-rimac focus:outline-none focus:ring-0 focus:border-gray-rimac-60 peer" placeholder="" value={formik.values.identity} onChange={formik.handleChange} onBlur={formik.handleBlur} minLength={8} maxLength={8} />
-                            <label htmlFor="identity" className="absolute text-sm text-gray-rimac-60 duration-300 transform -translate-y-1 scale-75 top-2 z-10 bg-white px-2 peer-focus:px-0 peer-focus:text-gray-rimac-60 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-1 left-1">Nro. de documento</label>
+                            <input type="text" id="identity" className="block rounded-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-rimac bg-gray-50 border border-gray-rimac appearance-none focus:outline-none focus:ring-0 focus:border-gray-rimac-60 peer" placeholder="" value={formik.values.identity} onChange={formik.handleChange} onBlur={formik.handleBlur} minLength={8} maxLength={8} />
+                            <label htmlFor="identity" className="absolute text-sm text-gray-rimac-60 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Nro. de documento</label>
                         </div>
                         {formik.touched.identity && formik.errors.identity ? (
                             <div className='text-red-600 font-semibold pt-1 pl-1.5'>
@@ -65,8 +65,8 @@ const Insurence: FunctionComponent<{}> = () => {
                             </div>
                         ) : null}
                         <div className="relative mt-4">
-                            <input type="text" id="cellphone" className="block px-2.5 pb-3 pt-4 w-full text-sm bg-transparent rounded-lg border border-gray-rimac-60 appearance-none text-gray-rimac focus:outline-none focus:ring-0 focus:border-gray-rimac-60 peer" placeholder="" value={formik.values.cellphone} onChange={formik.handleChange} onBlur={formik.handleBlur} minLength={9} maxLength={9} />
-                            <label htmlFor="cellphone" className="absolute text-sm text-gray-rimac-60 duration-300 transform -translate-y-1 scale-75 top-2 z-10 bg-white px-2 peer-focus:px-0.5 peer-focus:text-gray-rimac-60 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-1 left-1">Celular</label>
+                            <input type="text" id="cellphone" className="block rounded-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-rimac bg-gray-50 border border-gray-rimac appearance-none focus:outline-none focus:ring-0 focus:border-gray-rimac-60 peer" placeholder="" value={formik.values.cellphone} onChange={formik.handleChange} onBlur={formik.handleBlur} minLength={9} maxLength={9} />
+                            <label htmlFor="cellphone" className="absolute text-sm text-gray-rimac-60 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Celular</label>
                         </div>
                         {formik.touched.cellphone && formik.errors.cellphone ? (
                             <div className='text-red-600 font-semibold pt-1 pl-1.5'>
